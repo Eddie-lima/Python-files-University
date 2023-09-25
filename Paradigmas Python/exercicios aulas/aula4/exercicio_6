@@ -1,0 +1,13 @@
+p     | q     | (p and q) | (p or q) | not (p or q) | (p and q) and not (p or q)
+------------------------------------------------------------------------------
+True  | True  | True      | True     | False         | False
+True  | False | False     | True     | False         | False
+False | True  | False     | True     | False         | False
+False | False | False     | False    | True          | True
+
+p     | q     | not q | p and not q | not(p and not q) | not(p and not q) or q
+-------------------------------------------------------------------------------
+True  | True  | False | False        | True              | True
+True  | False | True  | True         | False             | False
+False | True  | False | False        | True              | True
+False | False | True  | False        | True              | True
