@@ -6,5 +6,5 @@ while number1 <= number2:
         print(number1)
     number1 += 1
 
-
+count = len(number1 -)
 print(f"A quantidade de números pares entre {number1} e {number2} é {count}")
