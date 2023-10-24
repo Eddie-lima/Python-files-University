@@ -1,10 +1,24 @@
-number1 = int(input("Diga um número: "))
-number2 = int(input("Diga outro número: "))
+while True:
+    try:
+        numero1 = int(input("Digite o primeiro número: "))
+        break
+    except ValueError:
+        print("Por favor, digite um número inteiro válido.")
 
-while number1 <= number2:
-    if number1 % 2 == 0:
-        print(number1)
-    number1 += 1
+while True:
+    try:
+        numero2 = int(input("Digite o segundo número: "))
+        break 
+    except ValueError:
+        print("Por favor, digite um número inteiro válido.")
 
-count = len(number1 -)
-print(f"A quantidade de números pares entre {number1} e {number2} é {count}")
+if numero1 > numero2:
+    numero1, numero2 = numero2, numero1
+
+contador = 0
+
+for numero in range(numero1, numero2 + 1):
+    if numero % 2 == 0:
+        contador += 1
+
+print(f"A quantidade de números pares entre {numero1} e {numero2} é {contador}")
